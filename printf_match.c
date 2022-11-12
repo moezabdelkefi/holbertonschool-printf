@@ -5,7 +5,7 @@
  *print_match -  print output according to a format.
  *@format: type of dat we need to print.
  *@pt: structure.
- *@arg: input functions.
+ *@args: input functions.
  *Return: the number of charactere printed (encluding the null byte).
  */
 int print_match(const char *format, print_t pt[], va_list args)
