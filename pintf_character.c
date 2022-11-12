@@ -8,6 +8,7 @@
  */
 int printf_char(va_list args)
 {
+	
 	int x = 0;
 
 	x = va_arg(args, int);
