@@ -20,5 +20,6 @@ int printf_perc(va_list args);
 int print_match(const char *format, print_t pt[], va_list args);
 int _printf(const char *format, ...);
 int printf_digit(va_list args);
-int func_conv(va_list args);
+int print_reverse(va_list args);
+int funct_rot_13(va_list arg);
 #endif

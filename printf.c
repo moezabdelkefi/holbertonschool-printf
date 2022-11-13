@@ -18,7 +18,6 @@ int _printf(const char *format, ...)
 		{"%", printf_perc},
 		{"d", printf_digit},
 		{"i", printf_digit},
-		{"convert", func_conv},
 		{NULL, NULL},
 	};
 	if (format == NULL)
