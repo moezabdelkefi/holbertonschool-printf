@@ -6,6 +6,8 @@
  */
 int _printf(const char *format, ...)
 {
+	va_list arg;
+	int len = 0;
 
 	print pt[] = {
 		{"c", printf_char},
@@ -15,8 +17,10 @@ int _printf(const char *format, ...)
 		{"i", printf_digit},
 		{NULL, NULL},
 	};
-	va_list arg;
-	int len = 0;
+	if (format == NULL)
+	{
+		return (-1);
+	}
 	va_start(arg, format);
 	len = print_match(format, pt, arg); /*match_functions must have as arguments to the format, the args,the struct "pt" witch has the list of the functions*/
 	va_end(arg);
