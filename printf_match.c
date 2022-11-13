@@ -20,6 +20,7 @@ int print_match(const char *format, print pt[], va_list args)
 			putchar(format[i]);
 			count = count + 1;
 		}
+		else
 		{
 			for (j = 0; pt[j].data != NULL; j++)
 			{
