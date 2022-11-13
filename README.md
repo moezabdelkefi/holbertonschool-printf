@@ -9,7 +9,7 @@ This project consists about creating the printf function in the C language, and 
 It's a way that produce precisly formatted output from numerical or textural argmuments. 
 It's used to print to the screen integers, characters,decimals, strings of characters and percents. 
 
-File	Description
+   File	Description:
 
 printf.c:	contains the fucntion _printf, which uses the prototype int _printf(const char *format, ...);. The format string is composed of zero or more directives.
 
@@ -19,7 +19,7 @@ main.h:	contains all function prototypes used for _printf.
 
 man_3_printf	:manual page for the custom _printf function.
 
-Format Specifiers
+Format Specifiers:
 The format specifiers tells the function how to take the arguments based on the type indicated.
 
 Type	FORMAT:
@@ -35,9 +35,9 @@ Type	FORMAT:
 %%:	Prints a percentage symbol.
 
 
-Compilation
+Compilation:
 The code for compiling is:
-$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
+                                        $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 
 
