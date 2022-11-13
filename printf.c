@@ -20,8 +20,6 @@ int _printf(const char *format, ...)
 		{"i", printf_digit},
 		{NULL, NULL},
 	};
-	if (format == NULL)
-		return (-1);
 	va_start(arg, format);
 	len = print_match(format, pt, arg);
 	va_end(arg);
