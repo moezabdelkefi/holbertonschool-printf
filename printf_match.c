@@ -46,7 +46,6 @@ int print_match(const char *format, print pt[], va_list args)
 			}
 			i = i + 1;
 		}
-		else
 		{
 			_putchar(format[i]);
 			count++;
