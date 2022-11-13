@@ -6,7 +6,7 @@
  *@args: input
  *Return: i(caracater).
  */
-int print_char(va_list arg)
+int print_char(va_list args)
 {
 	char ch;
 

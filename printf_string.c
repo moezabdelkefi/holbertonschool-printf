@@ -6,7 +6,7 @@
  *@args:input.
  *Return: i.
  */
-int print_string(va_list arg)
+int print_string(va_list args)
 {
 	unsigned int i;
 	char *str;
