@@ -8,16 +8,13 @@
  */
 int printf_string(va_list args)
 {
-	int i = 0;
-	char *st = va_arg(args, char *);
+	unsigned int i;
+	char *str;
 
-	if (st == NULL) /*pointere on no adress*/
-	{
-		st = "(null)"; /*declere empty string*/
-	}
-	for (i = 0; st[i] != '\0'; i++)
-	{
-		putchar(st[i]);
-	}
+	str = va_arg(args, char *);
+	if (str == 0)
+		str = "(null)";
+	for (i = 0; str[i] != 0; i++)
+		_putchar(str[i]);
 	return (i);
 }

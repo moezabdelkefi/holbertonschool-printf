@@ -8,10 +8,9 @@
  */
 int printf_char(va_list args)
 {
+	char ch;
 
-	int x = 0;
-
-	x = va_arg(args, int);
-	putchar(x);
+	ch = (va_arg(args, int));
+	_putchar(ch);
 	return (1);
 }
