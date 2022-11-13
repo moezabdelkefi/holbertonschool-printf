@@ -10,43 +10,42 @@
  */
 int print_match(const char *format, print pt[], va_list args)
 {
-	int i = 0, j, done = 0;
-	int c = 0, k = 0;
+	int i, s, fvalue;
+	int count = 0;
 
-	for (i = 0; format && format[i] != 0; i++)
+		for (i = 0; format[i] != '\0'; i++)
 	{
-		if (format[i] != '%')
+		if (format[i] == '%')
 		{
-			putchar(format[i]);            /*print all character of format above percent*/
-			c = c + 1;
-		}
-		else
-		{                                 /*begin when we found % and begin we found the fisrt character after percent*/
-			for (j = 0; pt[j].data; j++)
+			for (s = 0; pt[s].data != NULL; s++)
 			{
-				if (format[i + 1] == pt[j].data[k])        /* search about the character with the struct "pt" and incriment the counter j*/
+				if (format[i + 1] == pt[s].sym[0])
 				{
-					done = pt[j].y(args);
-					c += done;
-					i++;
+					fvalue = pt[s].f(args);
+					if (fvalue == -1)
+						return (-1);
+					count += fvalue;
 					break;
 				}
 			}
-			if (pt[j].data == NULL && format[i + 1] != ' ')
-			{                                                /*begin when the character dosent existe in "pt"*/
-				if (format[i + 1] != 0)
+			if (pt[s].data == NULL && format[i + 1] != ' ')
+			{
+				if (format[i + 1] != '\0')
 				{
-					putchar(format[i]);           /*print the character percent and after character percent and incriment c with 2 character*/
-					putchar(format[i + 1]);
-					c = c + 2;
-					i++;
+					_putchar(format[i]);
+					_putchar(format[i + 1]);
+					count = count + 2;
 				}
 				else
 					return (-1);
 			}
+			i = i + 1;
+		}
+		else
+		{
+			_putchar(format[i]);
+			count++;
 		}
 	}
-	if (format == NULL)
-		return (-1);
-	return (c);
+	return (count);
 }
