@@ -21,7 +21,7 @@ main.h:	contains all function prototypes used for _printf.
 man_3_printf	:manual page for the custom _printf function.
 
 Format Specifiers:
-The format specifiers tells the function how to take the arguments based on the type indicated.
+*The format specifiers tells the function how to take the arguments based on the type indicated.
 
 Type	FORMAT:
 
