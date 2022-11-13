@@ -10,7 +10,7 @@ int _printf (const char *format, ...)
 
 
 .SH DESCRIPTION 
-It's a way that produce precisly formatted output from numerical or textural argmuments. 
+It's a way that produce precisly formatted output from numerical or textural argmuments.
 It's used to print to the screen integers, characters,decimals, strings of characters and percents. 
 
 .B%c

@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 	va_list arg;
 	int len = 0;
 	va_start(arg, format);
-	len = print_match(format, pt, arg);
+	len = print_match(format, pt, arg); /*match_functions must have as arguments to the format, the args,the struct "pt" witch has the list of the functions*/
 	va_end(arg);
 	return (len);
 }

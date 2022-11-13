@@ -13,18 +13,18 @@ int printf_digit(va_list arg)
 
 	if (n < 0)
 	{
-		putchar('-');
+		putchar('-');  /*print negative number*/
 		k = n * -1;
 		c++;
 	}
 	else
 	{
-		k = n;
+		k = n; /*value of k will be positive*/
 	}
 
 	while ((k / m) >= 10)
 	{
-		m = m * 10;
+		m = m * 10;               /*count number of digit of the integer*/
 	}
 	while (m != 0)
 	{
