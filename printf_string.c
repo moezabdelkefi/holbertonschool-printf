@@ -11,7 +11,7 @@ int print_string(va_list args)
 	unsigned int i;
 	char *str;
 
-	str = va_arg(arg, char *);
+	str = va_arg(args, char *);
 	if (str == 0)
 		str = "(null)";
 	for (i = 0; str[i] != 0; i++)
