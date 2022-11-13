@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *printf_string - print string.
- *@args:input.
+ *@args:argument.
  *Return: i.
  */
 int printf_string(va_list args)

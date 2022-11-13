@@ -5,30 +5,30 @@
  *print_match -  print output according to a format.
  *@format: type of dat we need to print.
  *@pt: structure.
- *@args: input functions.
+ *@args: argument.
  *Return: the number of charactere printed (encluding the null byte).
  */
 int print_match(const char *format, print pt[], va_list args)
 {
-	int i, s, fvalue;
+	int i, j, val;
 	int count = 0;
 
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
 		{
-			for (s = 0; pt[s].data != NULL; s++)
+			for (j = 0; pt[j].data != NULL; j++)
 			{
-				if (format[i + 1] == pt[s].data[0])
+				if (format[i + 1] == pt[j].data[0])
 				{
-					fvalue = pt[s].y(args);
-					if (fvalue == -1)
+					val = pt[j].y(args);
+					if (val == -1)
 						return (-1);
-					count += fvalue;
+					count += val;
 					break;
 				}
 			}
-			if (pt[s].data == NULL && format[i + 1] != ' ')
+			if (pt[j].data == NULL && format[i + 1] != ' ')
 			{
 				if (format[i + 1] != '\0')
 				{

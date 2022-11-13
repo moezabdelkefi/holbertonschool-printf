@@ -7,7 +7,7 @@
 #include <unistd.h>
 /**
  *struct print - structure of printf functions
- *@tt: input
+ *@tt: char
  *@y: the function pointer to the printing function used
  */
 typedef struct print

@@ -22,7 +22,7 @@ int _printf(const char *format, ...)
 		return (-1);
 
 	va_start(arg, format);
-	len = print_match(format, pt, arg); /*match_functions must have as arguments to the format, the args,the struct "pt" witch has the list of the functions*/
+	len = print_match(format, pt, arg);
 	va_end(arg);
 	return (len);
 }

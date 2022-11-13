@@ -3,7 +3,7 @@
 #include <stdarg.h>
 /**
  *printf_char - print caracter
- *@args: input
+ *@args: argument
  *Return: i(caracater).
  */
 int printf_char(va_list args)
