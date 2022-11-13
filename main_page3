@@ -6,8 +6,9 @@ The man 3 _printf "07 -11 -2022 " "Holbertonschool"
 
 .B "include "main.h"
 it used to take des arguments from main and  for making _printf work . 
-int _printf (const char *format, ...)
 
+.B int printf(constchar *format, ..)
+function that produces output according to a format.
 
 .SH DESCRIPTION 
 It's a way that produce precisly formatted output from numerical or textural argmuments.
@@ -42,5 +43,7 @@ it returns a negative value
 
 
 .SH AUTHORS
+
+.nm
 Iheb Drihmi - https://github.com/iheb-drihmi 
 Moez Abelkefi - https://github.com/moezabdelkefi
