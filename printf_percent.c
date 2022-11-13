@@ -4,10 +4,10 @@
 /**
  *printf_perc - print percent.
  *@args: input
- *Return: void.
+ *Return: 1
  */
-int print_percent(__attribute__((unused)) va_list args)
+int printf_percent(__attribute__((unused)) va_list args)
 {
-	_putchar('%');
+	putchar('%');
 	return (1);
 }

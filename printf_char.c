@@ -6,11 +6,12 @@
  *@args: input
  *Return: i(caracater).
  */
-int print_char(va_list args)
+int printf_char(va_list args)
 {
-	char ch;
 
-	ch = (va_arg(args, int));
-	_putchar(ch);
+	int x = 0;
+
+	x = va_arg(args, int);
+	putchar(x);
 	return (1);
 }
