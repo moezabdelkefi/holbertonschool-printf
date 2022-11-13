@@ -6,6 +6,8 @@
                                            Holberton school team project "PRINTF"
 
 Introducing :
+
+
 This project consists about creating the printf function in the C language, and getting the exact same output as if we were using teh original one.
 It's a way that produce precisly formatted output from numerical or textural argmuments. 
 It's used to print to the screen integers, characters,decimals, strings of characters and percents. 
@@ -21,7 +23,7 @@ main.h:	contains all function prototypes used for _printf.
 man_3_printf	:manual page for the custom _printf function.
 
 Format Specifiers:
-The format specifiers tells the function how to take the arguments based on the type indicated.
+*The format specifiers tells the function how to take the arguments based on the type indicated.
 
 Type	FORMAT:
 
