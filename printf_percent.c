@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdarg.h>
 /**
  *printf_perc - print percent.
  *@args: input

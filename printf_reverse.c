@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdarg.h>
 /**
  *print_reverse - print reverse
  *@args:list of arguments

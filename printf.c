@@ -1,7 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdarg.h>
-#include <stdio.h>
 /**
  *_printf - print output according to a format.
  *@format: type of data we need to print.

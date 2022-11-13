@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdarg.h>
 /**
  *printf_string - print string.
  *@args:input.
@@ -9,12 +7,12 @@
 int printf_string(va_list args)
 {
 	unsigned int i;
-	char *str;
+	char *st;
 
-	str = va_arg(args, char *);
-	if (str == 0)
-		str = "(null)";
-	for (i = 0; str[i] != 0; i++)
-		_putchar(str[i]);
+	st = va_arg(args, char *);
+	if (st == 0)
+		st = "(null)";
+	for (i = 0; st[i] != 0; i++)
+		_putchar(st[i]);
 	return (i);
 }

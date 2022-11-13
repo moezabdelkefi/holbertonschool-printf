@@ -1,0 +1,47 @@
+The man 3 _printf "07 -11 -2022 " "Holbertonschool"
+.SH NAME 
+.B _printf
+.SH SYNOPSIS
+
+
+.B "include "main.h"
+it used to take des arguments from main and  for making _printf work . 
+int _printf (const char *format, ...)
+
+
+.SH DESCRIPTION 
+It's a way that produce precisly formatted output from numerical or textural argmuments. 
+It's used to print to the screen integers, characters,decimals, strings of characters and percents. 
+
+.B%c
+ 
+prints a character
+
+.B %s
+ 
+prints a string of characters
+
+.B %i
+
+prints an integer
+
+.B %d
+. 
+prints a decimal
+ 
+.B %%
+
+prints a percent
+ 
+.SH RETURN VALUE
+
+If the function was successful: 
+it returns the numbers of characters was printed
+If the function failed: 
+it returns a negative value
+
+
+.SH AUTHORS
+ 
+Iheb Drihmi - https://github.com/iheb-drihmi 
+Moez Abelkefi - https://github.com/moezabdelkefi
