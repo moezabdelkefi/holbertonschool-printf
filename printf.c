@@ -11,9 +11,9 @@ int _printf(const char *format, ...)
 {
 
 	print pt[] = {
-		{"c", funct_char},
-		{"s", funct_string},
-		{"%", funct_percent},
+		{"c", print_char},
+		{"s", print_string},
+		{"%", print_percent},
 		{"d", printf_digit},
 		{"i", printf_digit},
 		{NULL, NULL},

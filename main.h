@@ -14,9 +14,9 @@ typedef struct print
 	int (*y)(va_list);
 } print;
 int _putchar(char c);
-int funct_string(va_list arg);
-int funct_char(va_list arg);
-int funct_percent(__attribute__((unused)) va_list arg);
+int print_string(va_list arg);
+int print_char(va_list arg);
+int print_percent(__attribute__((unused)) va_list arg);
 int print_match(const char *format, print pt[], va_list args);
 int _printf(const char *format, ...);
 int printf_digit(va_list args);
