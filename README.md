@@ -37,6 +37,7 @@ Type	FORMAT:
 
 Compilation:
 The code for compiling is:
+
                                         $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 
