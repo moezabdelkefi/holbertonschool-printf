@@ -2,7 +2,7 @@
 
 
 
-                                                  Holberton school team project "PRINTF"
+                                           Holberton school team project "PRINTF"
 
 Introducing :
 This project consists about creating the printf function in the C language, and getting the exact same output as if we were using teh original one.
@@ -38,13 +38,10 @@ Type	FORMAT:
 Compilation:
 The code for compiling is:
 
-                                        $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
-
-
+                                   $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 
 Authors :
 Moez Abdelkefi
 
-Iheb Drihmi 
-
+Iheb Drihmi
