@@ -3,8 +3,8 @@
 #include <stdarg.h>
 /**
  *print_reverse - print reverse
- *@args:
- *Return:
+ *@args:list of arguments
+ *Return: count character
  */
 int print_reverse(va_list args)
 {
