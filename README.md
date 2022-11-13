@@ -3,7 +3,7 @@
 
 
 
-                                           Holberton school team project "PRINTF"
+                                            Holberton school team project "PRINTF"
 
 Introducing :
 
