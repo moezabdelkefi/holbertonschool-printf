@@ -14,12 +14,12 @@ int print_int(va_list args)
 	if (n < 0)
 	{
 		_putchar('-');
-		n = n * -1;
+		n = n * -1; /*print negative number*/
 		i++;
 	}
-	x = n;
+	x = n;  /*value of k will be positive*/
 	while ((x / d) > 9)
-		d = d * 10;
+		d = d * 10;  /*count number of digit of the integer*/
 	while (d > 0)
 	{
 		_putchar(x / d + '0');
