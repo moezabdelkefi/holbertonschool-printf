@@ -10,7 +10,7 @@
 int _printf(const char *format, ...)
 {
 	va_list arg;
-	int len;
+	int len = 0;
 
 	print_t pt[] = {
 		{"c", printf_char},
