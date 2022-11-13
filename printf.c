@@ -9,17 +9,17 @@
  */
 int _printf(const char *format, ...)
 {
-	va_list arg;
-	int len = 0;
 
-	print_t pt[] = {
-		{"c", printf_char},
-		{"s", printf_string},
-		{"%", printf_perc},
+	print pt[] = {
+		{"c", funct_char},
+		{"s", funct_string},
+		{"%", funct_percent},
 		{"d", printf_digit},
 		{"i", printf_digit},
 		{NULL, NULL},
 	};
+	va_list arg;
+	int len = 0;
 	va_start(arg, format);
 	len = print_match(format, pt, arg);
 	va_end(arg);

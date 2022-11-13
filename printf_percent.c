@@ -6,8 +6,8 @@
  *@args: input
  *Return: void.
  */
-int printf_perc(__attribute__((unused)) va_list args)
+int funct_percent(__attribute__((unused)) va_list arg)
 {
-	putchar('%');
+	_putchar('%');
 	return (1);
 }

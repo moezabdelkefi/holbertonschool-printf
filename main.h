@@ -12,12 +12,12 @@ typedef struct print
 {
 	char *data;
 	int (*y)(va_list);
-} print_t;
+} print;
 int _putchar(char c);
-int printf_char(va_list args);
-int printf_string(va_list args);
-int printf_perc(va_list args);
-int print_match(const char *format, print_t pt[], va_list args);
+int funct_string(va_list arg);
+int funct_char(va_list arg);
+int funct_percent(__attribute__((unused)) va_list arg);
+int print_match(const char *format, print pt[], va_list args);
 int _printf(const char *format, ...);
 int printf_digit(va_list args);
 int print_reverse(va_list args);

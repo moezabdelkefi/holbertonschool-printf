@@ -8,7 +8,7 @@
  *@args: input functions.
  *Return: the number of charactere printed (encluding the null byte).
  */
-int print_match(const char *format, print_t pt[], va_list args)
+int print_match(const char *format, print pt[], va_list args)
 {
 	int i = 0, j, done = 0;
 	int c = 0, k = 0;
