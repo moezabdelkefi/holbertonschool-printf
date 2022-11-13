@@ -13,15 +13,15 @@ int print_match(const char *format, print pt[], va_list args)
 	int i, s, fvalue;
 	int count = 0;
 
-		for (i = 0; format[i] != '\0'; i++)
+	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
 		{
 			for (s = 0; pt[s].data != NULL; s++)
 			{
-				if (format[i + 1] == pt[s].sym[0])
+				if (format[i + 1] == pt[s].data[0])
 				{
-					fvalue = pt[s].f(args);
+					fvalue = pt[s].y(args);
 					if (fvalue == -1)
 						return (-1);
 					count += fvalue;
