@@ -17,6 +17,10 @@ int print_match(const char *format, print pt[], va_list args)
 	{
 		if (format[i] == '%')
 		{
+			putchar(format[i]);
+			count = count + 1;
+		}
+		{
 			for (j = 0; pt[j].data != NULL; j++)
 			{
 				if (format[i + 1] == pt[j].data[0])
