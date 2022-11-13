@@ -13,14 +13,14 @@ int _printf(const char *format, ...)
 		{"c", printf_char},
 		{"s", printf_string},
 		{"%", printf_percent},
-		{"d", printf_digit},
-		{"i", printf_digit},
+		{"d", print_int},
+		{"i", print_int},
 		{NULL, NULL},
 	};
 	if (format == NULL)
-	{
+
 		return (-1);
-	}
+
 	va_start(arg, format);
 	len = print_match(format, pt, arg); /*match_functions must have as arguments to the format, the args,the struct "pt" witch has the list of the functions*/
 	va_end(arg);
