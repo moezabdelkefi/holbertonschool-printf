@@ -2,29 +2,36 @@
 #include <stdlib.h>
 #include <stdarg.h>
 /**
- *print_match -   print output according to a format.
+ *print_match -  p print output according to a format.
  *@format: type of dat we need to print.
  *@pt: structure.
  *@args: argument.
  *Return: the number of charactere printed (encluding the null byte).
  */
-int print_match(const char *format, print pt[], va_list args)
+int print_match(const char *format, print pt[], va_list arg)
 {
-	int i, j, val;
+	int i, j;
 	int count = 0;
 	/*print all character of format above percent*/
+	if (format == NULL)
+	{
+		return (-1);
+	}
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
 		{ /*begin when we found % */
-			for (j = 0; pt[j].data != NULL; j++)
+			i++;
+			if (format[i] == '\0')
 			{
-				if (format[i + 1] == pt[j].data[0])
+				return (-1);
+			}
+			for (j = 0; j < 5; j++)
+			{
+				if (format[i] == pt[j].data)
 				{
-					val = pt[j].y(args);
-					if (val == -1)
-						return (-1);
-					count += val;
+
+					pt[j].p(arg);
 					break;
 				}
 				else
@@ -32,22 +39,10 @@ int print_match(const char *format, print pt[], va_list args)
 					putchar(*(format + i));
 				}
 			}
-			if (pt[j].data == NULL && format[i + 1] != ' ')
-			{ /*begin when the character dosent existe in "pt"*/
-				if (format[i + 1] != '\0')
-				{
-					_putchar(format[i]);
-					_putchar(format[i + 1]);
-					count = count + 2;
-				}
-				else
-					return (-1);
-			}
-			i = i + 1;
 		}
 		else
 		{
-			_putchar(format[i]);
+			putchar(format[i]);
 			count++;
 		}
 	}

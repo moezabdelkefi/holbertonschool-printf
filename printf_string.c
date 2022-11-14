@@ -13,6 +13,6 @@ int printf_string(va_list args)
 	if (st == 0)
 		st = "(null)";
 	for (i = 0; st[i] != 0; i++)
-		_putchar(st[i]);
+		putchar(st[i]);
 	return (i);
 }
