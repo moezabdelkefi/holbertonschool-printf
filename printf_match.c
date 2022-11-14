@@ -16,16 +16,16 @@ int print_match(const char *format, print pt[], va_list args)
 
 	for (i = 0; format && format[i] != 0; i++)
 	{
-		if (format[i] != '%')
+		if (format[i] != '%')// print all character of format above percent
 		{
 			_putchar(format[i]);
 			c = c + 1;
 		}
-		else
+		else //begin when we found percent
 		{
-			for (j = 0; pt[j].data; j++)
+			for (j = 0; pt[j].data; j++)//begin from the first character after percent
 			{
-				if (format[i + 1] == pt[j].data[k])
+				if (format[i + 1] == pt[j].data[k])//search about the character in the struct and incriment the counter
 				{
 					done = pt[j].y(args);
 					c += done;
@@ -33,12 +33,12 @@ int print_match(const char *format, print pt[], va_list args)
 					break;
 				}
 			}
-			if (pt[j].data == NULL && format[i + 1] != ' ')
+			if (pt[j].data == NULL && format[i + 1] != ' ') // begin when the character doesn't exist 
 			{
 				if (format[i + 1] != 0)
 				{
-					putchar(format[i]);
-					putchar(format[i + 1]);
+					putchar(format[i]);// print the character percent 
+					putchar(format[i + 1]);//after character percent percent incriment with 2 character 
 					c = c + 2;
 					i++;
 				}
