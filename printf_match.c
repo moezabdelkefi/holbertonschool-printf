@@ -27,6 +27,10 @@ int print_match(const char *format, print pt[], va_list args)
 					count += val;
 					break;
 				}
+				else
+				{
+					putchar(*(format + i));
+				}
 			}
 			if (pt[j].data == NULL && format[i + 1] != ' ')
 			{ /*begin when the character dosent existe in "pt"*/
