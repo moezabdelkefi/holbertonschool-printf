@@ -38,7 +38,7 @@ int print_match(const char *format, print pt[], va_list args)
 				if (format[i + 1] != 0)
 				{
 					putchar(format[i]);
-					putchar(format[i + 1]); 
+					putchar(format[i + 1]);
 					c = c + 2;
 					i++;
 				}
