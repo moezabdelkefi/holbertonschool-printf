@@ -10,7 +10,7 @@
  */
 int print_match(const char *format, print pt[], va_list args)
 {
-	int i, s, fvalue;
+	int i, s, val;
 	int count = 0;
 
 	for (i = 0; format[i] != '\0'; i++)
@@ -19,12 +19,12 @@ int print_match(const char *format, print pt[], va_list args)
 		{
 			for (s = 0; pt[s].data != NULL; s++)
 			{
-				if (format[i + 1] == pt[s].data[0])
+				if (format[i + 1] == pt[s].data(args))
 				{
-					fvalue = pt[s].y(args);
-					if (fvalue == -1)
+					val = pt[s].y(args);
+					if (val == -1)
 						return (-1);
-					count += fvalue;
+					count += val;
 					break;
 				}
 			}
