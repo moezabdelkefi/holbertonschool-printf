@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 /**
- *print_match -  print output according to a format.
+ *print_match -   print output according to a format.
  *@format: type of dat we need to print.
  *@pt: structure.
  *@args: argument.
