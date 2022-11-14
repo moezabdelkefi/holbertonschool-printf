@@ -10,11 +10,11 @@ int _printf(const char *format, ...)
 	int len = 0;
 
 	print pt[] = {
-		{'c', printf_char},
-		{'s', printf_string},
-		{'%', printf_percent},
-		{'d', print_int},
-		{'i', print_int},
+		{"c", printf_char},
+		{"s", printf_string},
+		{"%", printf_percent},
+		{"d", print_int},
+		{"i", print_int},
 	};
 	if (format == NULL)
 

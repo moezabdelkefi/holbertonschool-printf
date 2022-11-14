@@ -12,8 +12,8 @@
  */
 typedef struct print
 {
-	char data;
-	int (*p)(va_list);
+	char *data;
+	int (*y)(va_list);
 } print;
 int _putchar(char c);
 int printf_char(va_list args);
