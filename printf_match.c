@@ -19,7 +19,7 @@ int print_match(const char *format, print pt[], va_list args)
 		{
 			for (s = 0; pt[s].data != NULL; s++)
 			{
-				if (format[i + 1] == pt[s].data(args))
+				if (format[i + 1] == pt[s].data[0])
 				{
 					val = pt[s].y(args);
 					if (val == -1)
