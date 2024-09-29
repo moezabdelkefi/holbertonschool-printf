@@ -1,5 +1,6 @@
-<img width="377" alt="printf" src="https://user-images.githubusercontent.com/113900578/201536926-80d10754-7ac2-4866-a2da-77a410600f77.png">
-
+<p align="center">
+  <img width="377" alt="printf" src="https://user-images.githubusercontent.com/113900578/201536926-80d10754-7ac2-4866-a2da-77a410600f77.png">
+</p>
 
 
 
